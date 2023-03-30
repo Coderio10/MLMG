@@ -1,0 +1,116 @@
+:root{
+    /* color */
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);    
+    --GrayishBlue: hsl(0, 0%, 49%);
+    --GrayishBlue2: hsl(240, 1%, 27%);
+    --GrayishBlue3:rgb(161, 159, 159);
+    --GrayishBlue4:rgb(224, 224, 224);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+header {
+    background-color: var(--DarkBlue);
+}
+main {
+    min-height: 90vh;
+    min-height: 90dvh;
+    padding-bottom: 3rem;
+}
+/* faq heading */
+.heading {
+    padding: 1rem 1rem 0 1rem;
+}
+.heading h1 {
+    color: var(--DarkBlue);
+}
+.heading p {
+    color: var(--GrayishBlue2);
+    font-size: 15px;
+}
+
+/* page breadcrumb */
+.breadcrumb {
+    background-color: var(--GrayishBlue4);
+    padding: 0.5rem 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.breadcrumb li {
+    display: inline;
+    font-size: 1rem;
+    color: var(--DarkBlue);
+    font-family: "Open Sans", sans-serif;
+}
+.breadcrumb li+li:before {
+    padding: 0.5rem;
+    color: var(--DarkBlue);
+    content: "/\00a0";
+}
+.breadcrumb li a,
+.notes div p a {
+    color: var(--LimeGreen);
+}
+.breadcrumb li a:hover,
+.notes div p a:hover {
+    text-decoration: underline;
+}
+
+/* notes */
+.notes {
+    padding: 3rem 1rem;
+    color: var(--DarkBlue);
+}
+.notes div {
+    border-bottom: 1px solid var(--LimeGreen);
+    padding: 0.7rem 0;
+}
+.notes h2 {
+    margin-bottom: 1rem;
+    margin: 1rem 0;
+}
+.notes p {
+    font-size: 15px;
+    margin-top: 0.5rem;
+}
+.notes div .video-section {
+    display: flex;
+    gap: 1rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0.7rem 0;
+}
+.notes div span video {
+    width: clamp(315px, 400px, 330px);
+}
+.notes div span p {
+    font-size: 13px;
+}
+.notes div img {
+    width: 100%;
+}
+.about-main .side {
+    padding-top: 0;
+}
+
+/* video proofs */
+.proof {
+    display: grid;
+    padding: 4rem 0;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 1.5rem;
+    color: var(--DarkBlue);
+}
+.proof video {
+    width: 70vw;
+    height: auto;
+}
+
+.proof div p {
+    font-size: 15px;
+}
+
