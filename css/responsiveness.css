@@ -142,7 +142,6 @@
         grid-template-columns: repeat(2, auto);
         justify-content: center;
         align-items: center;
-        border: 2px solid rebeccapurple;
     }
     .benefits-section div {
         width: 250px;
@@ -155,7 +154,6 @@
         border-radius: 20px;
         color: var(--White);
         padding: 1rem;
-        border: 1px solid brown;
     }
     .benefits-section img {
         width: 100px;
