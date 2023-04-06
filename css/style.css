@@ -68,7 +68,7 @@ button a {
 }
 button:hover, 
 button:active {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 /* header */
@@ -103,16 +103,15 @@ ul li {
     position: fixed;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 90%;
-    overflow: hidden;
     z-index: 1;
     top: 0;
     left: 0;
     margin-top: 100px;
+    width: 0;
+    height: 0;
 }
 
-.popup {
+.popup {  
     text-align: center;
     margin: 10px auto;
     background-color: var(--White);
@@ -122,12 +121,13 @@ ul li {
     padding: 4rem;
     border-radius: 5px;
     visibility: hidden;
+    opacity: 0;
     overflow: hidden;
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* popup arrow */
-.popup:before {
+.popup::before {
     content: "";
     position: absolute;
     top: -10px;
@@ -138,9 +138,15 @@ ul li {
     border-color:  transparent transparent var(--White) transparent;
 }
 
+.anchor.active{
+    width: 100%;
+    height: 100%;
+}
 .anchor.active > .popup{
     visibility: visible;
+    opacity: 1;
 }
+
 
 .anchor .popup li a{
     font-size: 18px;
@@ -517,9 +523,9 @@ ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 2rem 0;
-    gap: 0.5rem;
+    gap: 0.5rem; 
+    border: 1px solid red;
 }
 .optin form label {
     display: none;
@@ -532,6 +538,9 @@ ul li a{
     border-radius: 5px;
     background-color: var(--LightGrayishBlue);
     padding: 0 5px;
+}
+#subBtn {
+    display: block;
 }
 /* Error Message */
 #error {
