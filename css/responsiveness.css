@@ -1,8 +1,32 @@
+@media (max-width: 375px) {
+    .optin form div {
+        width: 100%;
+    }
+    .optin form input {
+        width: 100%;
+    }
+    .sec-2 textarea, 
+    .sec-2 .input input {
+        width: 100%
+    } 
+}
+
 @media (max-width: 420px) {
     .proof video {
         width: 320px;
         height: auto;
     } 
+}
+@media (min-width: 500px) {
+     /* Optin */
+     .optin form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 0.5rem;
+    }
 }
 @media (min-width: 950px) {
     .proof {
@@ -127,21 +151,12 @@
         width: 400px;
     }
 
-    /* Optin */
-    .optin form {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0;
-        gap: 0.5rem;
-    }
-
     /* Benefit Section */
     .benefits-section {
         grid-template-columns: repeat(2, auto);
         justify-content: center;
         align-items: center;
+        border: 2px solid rebeccapurple;
     }
     .benefits-section div {
         width: 250px;
@@ -154,6 +169,7 @@
         border-radius: 20px;
         color: var(--White);
         padding: 1rem;
+        border: 1px solid brown;
     }
     .benefits-section img {
         width: 100px;
