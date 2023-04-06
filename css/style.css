@@ -525,7 +525,6 @@ ul li a{
     justify-content: center;
     padding: 2rem 0;
     gap: 0.5rem; 
-    border: 1px solid red;
 }
 .optin form label {
     display: none;
