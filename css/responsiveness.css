@@ -9,6 +9,9 @@
     .sec-2 .input input {
         width: 100%
     } 
+    .sec-2 form {
+        width: 90%;
+    }
 }
 
 @media (max-width: 420px) {
@@ -156,7 +159,6 @@
         grid-template-columns: repeat(2, auto);
         justify-content: center;
         align-items: center;
-        border: 2px solid rebeccapurple;
     }
     .benefits-section div {
         width: 250px;
@@ -169,7 +171,6 @@
         border-radius: 20px;
         color: var(--White);
         padding: 1rem;
-        border: 1px solid brown;
     }
     .benefits-section img {
         width: 100px;
